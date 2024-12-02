@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+#sidebar {
+    height: 954px;
+    width: 13%;
+    background-color: #dad9d9;
+}
+#toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+.menu i {
+    font-size: 24px;
+}
+
+ul {
+    color: #fff;
+}
+li {
+    margin: 40px 0px;
+    list-style: none;
+    
+}
+ li a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+li a i {
+    font-size: 24px;
+}
+li a:hover {
+  background-color: #b3acac;
+  border-radius: 10px;
+  padding: 4px
+}
+.bi {
+    margin: 10px;
+}
+#auth a {
+  font-size: 16px;
+}
+.bi-caret-right {
+    transition: transform 0.3s ease;
+}
+
+
+ .bi-caret-right {
+    transform: rotate(90deg);
+}
+
+footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+ footer p {
+    font-size: 24px;
+    font-weight: 600;
+ }
+ 
+ #sidebar.shrink {
+    width: 130px;
+}
+#sidebar.shrink .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+#sidebar.shrink .header {
+    display: none;
+}
+#sidebar.shrink span {
+    display: none;
+}
+
+#sidebar.shrink .bi-caret-right {
+    display: none;
+}
+#sidebar.shrink .footer-para {
+    display: none;
+}
+
+ @media (min-width:320px) and (max-width:480px) {
+    #sidebar {
+        width: 70%;
+    }
+    #auth li, a {
+        text-align: center;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+ }
+
+ @media (min-width:1024px) and (max-width:1440px) {
+    #sidebar {
+     width: 100%;
+     height: 100%;
+    }
+ }
+
+
+
